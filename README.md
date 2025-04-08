@@ -54,6 +54,7 @@ ts-colyseus-study-2025/
 | 김혜원 | nyamic |
 | 박채윤 | profobbb |
 | 기지현 | itisjeon94 |
+| 박서영 | sum-young |
 
 ---
 
