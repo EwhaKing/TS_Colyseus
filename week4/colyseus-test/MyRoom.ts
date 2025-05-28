@@ -43,12 +43,14 @@ export class MyRoom extends Room<MyState> {
     const player = new Player();
     player.name = `Player_${client.sessionId}`;
     this.state.players.set(client.sessionId, player);
+    console.log(`플레이어${client.sessionId}님이 입장하셨습니다.`)
   }
 
   /* onLeave: 클라이언트가 나갈 때 실행되는 메서드
   room 상태에 플레이어 삭제
   --> 이 상태를 접속 중인 클라이언트 모두에게 실시간 동기화 */
   onLeave(client: Client) {
+    console.log(`플레이어${client.sessionId}님이 퇴장하셨습니다.`)
     this.state.players.delete(client.sessionId);
   }
 }
